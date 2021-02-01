@@ -1,0 +1,87 @@
+*{  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    border-radius:5px;
+    margin:5px;
+}
+
+.grid-container{
+    border:1px solid black;
+    height:400px;
+    width:300px;
+    display:grid;
+    background-color:rgb(204, 137, 11);
+    padding:10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "screen screen screen reset"
+        "number1 number2 number3 divide"
+        "number4 number5 number6 multiply"
+        "number7 number8 number9 subtract"
+        "number0 separator result add";
+}
+
+#screen{
+    border:1px solid black;
+    padding:10px;
+    text-align:end;
+    grid-area:screen;
+    background:rgb(211, 203, 203);
+}
+
+/* Botones */
+button{
+    background:rgb(143, 135, 135);
+}
+#number0{
+    grid-area:number0;
+    
+}
+#number1{
+    grid-area:number1;
+}
+#number2{
+    grid-area:number2;
+}
+#number3{
+    grid-area:number3;
+}
+#number4{
+    grid-area:number4;
+}
+#number5{
+    grid-area:number5;
+}
+#number6{
+    grid-area:number6;
+}
+#number7{
+    grid-area:number7;
+}
+#number8{
+    grid-area:number8;
+}
+#number9{
+    grid-area:number9;
+}
+
+#separator{
+    grid-area:separator;
+}
+
+#result{
+    grid-area:result;
+}
+#add{
+    grid-area:add;
+}
+#subtract{
+    grid-area:subtract;
+}
+#divide{
+    grid-area:divide;
+}
+#multiply{
+    grid-area:multiply;
+}
