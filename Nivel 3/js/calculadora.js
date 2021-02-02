@@ -47,16 +47,24 @@ document.getElementById("multiply").addEventListener('click',function(){
 document.getElementById("reset").addEventListener('click',reset,false);
 document.getElementById("result").addEventListener('click',calculate,false);
 
+
+var pantalla = document.getElementById("screen");
+
 //Muestra la pantalla en blanco
 function reset(){
-    document.getElementById("screen").innerHTML="";
+    pantalla.innerHTML="";
 }
 //Función que añade cada elemento a la pantalla
 function addElement(ele){
-    document.getElementById("screen").innerHTML += ele;
-    console.log(ele);
+    if(pantalla.innerText.length>19){
+        pantalla.innerHTML = "Error, no caben tantos números en pantalla."
+    }else{
+        pantalla.innerHTML += ele;
+    }
+    
 }
 //Evalua toda la operación
 function calculate(){
-    document.getElementById("screen").innerHTML = eval(document.getElementById("screen").innerHTML);
+    pantalla.innerHTML = eval(pantalla.innerHTML);
 }
+

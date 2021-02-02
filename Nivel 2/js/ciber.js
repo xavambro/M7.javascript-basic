@@ -13,6 +13,8 @@ function calculadorav1(operacio,valor1,valor2){
             console.log(valor1/valor2);
 
         }
+    }else{
+        console.log("No has introduït una operació correcta.")
     }
 
 }
