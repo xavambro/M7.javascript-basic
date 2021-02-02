@@ -47,20 +47,20 @@ document.getElementById("multiply").addEventListener('click',function(){
 document.getElementById("reset").addEventListener('click',reset,false);
 document.getElementById("result").addEventListener('click',calculate,false);
 
-
+//Variable pantalla
 var pantalla = document.getElementById("screen");
 
-//Muestra la pantalla en blanco
+//Función que muestra la pantalla en blanco
 function reset(){
     pantalla.innerHTML="";
 }
 //Función que añade cada elemento a la pantalla
 function addElement(ele){
-    if(pantalla.innerText.length>19){
+    /* if(pantalla.innerText.length>19){
         pantalla.innerHTML = "Error, no caben tantos números en pantalla."
-    }else{
+    }else{ */
         pantalla.innerHTML += ele;
-    }
+    /* } */
     
 }
 //Evalua toda la operación

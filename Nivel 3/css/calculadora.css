@@ -28,6 +28,7 @@
     text-align:end;
     grid-area:screen;
     background:rgb(211, 203, 203);
+    overflow:hidden;
 }
 
 /* Botones */
