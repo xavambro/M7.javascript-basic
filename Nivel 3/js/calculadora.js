@@ -48,7 +48,7 @@ document.getElementById("reset").addEventListener('click',reset,false);
 document.getElementById("result").addEventListener('click',calculate,false);
 
 //Variable pantalla
-var pantalla = document.getElementById("screen");
+const pantalla = document.getElementById("screen");
 
 //Función que muestra la pantalla en blanco
 function reset(){
